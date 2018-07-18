@@ -15,7 +15,7 @@ capabilities.browser_name = :chrome
 #    :desired_capabilities => capabilities
 #)
 
-browser = Watir::Browser.new(:remote, url: 'http://localhost:4444/wd/hub', desired_capabilities: capabilities)
+browser = Watir::Browser.new(:remote, url: 'http://192.168.140.20:4444/wd/hub', desired_capabilities: capabilities)
 
 
 Before do
