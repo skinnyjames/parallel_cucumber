@@ -9,13 +9,13 @@ World(PageObject::PageFactory)
 capabilities = Selenium::WebDriver::Remote::Capabilities.new
 capabilities.browser_name = :chrome
 
-browser = Watir::Browser.new(
-    :remote,
-    :url => ENV['IP'],
-    :desired_capabilities => capabilities
-)
+#browser = Watir::Browser.new(
+#    :remote,
+#    :url => ENV['IP'],
+#    :desired_capabilities => capabilities
+#)
 
-# browser = Watir::Browser.new(:chrome)
+browser = Watir::Browser.new(:chrome)
 
 
 Before do
