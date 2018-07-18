@@ -6,7 +6,7 @@ pipeline {
     docker { image 'ruby:2.5' }
   }
   environment {
-     GRID_IP = 'localhost:4444'
+     GRID_IP = '192.168.140.20:4444'
      NODES = 2
   }
   stages {
