@@ -13,7 +13,8 @@ pipeline {
     stage('Test') {
       steps {
         sh 'bundle install'
-        sh "bundle exec parallel_cucumber features/ -m ${env.NODES} -o IP=${env.GRID_IP}"
+        //sh "bundle exec parallel_cucumber features/ -m ${env.NODES} -o IP=${env.GRID_IP}"
+        sh "bundle exec cucumber features/ -o IP=${env.GRID_IP}"
       }
     }
   }
